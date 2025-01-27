@@ -23,7 +23,9 @@ class HomeViewBody extends StatelessWidget {
                   CustomAppBar(),
                   CustomCardListView(),
                   const SizedBox(height: 50),
-                  Text('Top Animes', style: Styles.titleMedium),
+                  Text('Top Animes',
+                      style: Styles.texyStyle20
+                          .copyWith(fontWeight: FontWeight.w600)),
                   const SizedBox(height: 20),
                 ],
               ),
