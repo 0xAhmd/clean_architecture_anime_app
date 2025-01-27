@@ -1,7 +1,7 @@
 import 'package:bookly_app/core/utils/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -42,16 +42,19 @@ class _SplashViewBodyState extends State<SplashViewBody>
           opacity: _fadeAnimation,
           child: Image.asset(
             AssetsData.logo2,
+            height: 300,
           ),
         ),
+        const SizedBox(height: 8),
         FadeTransition(
           opacity: _fadeAnimation,
           child: Text(
-            'Stories that live in your pocket',
+            'Your Getway to the World of Anime',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 19,
-              fontWeight: FontWeight.bold,
+            style: GoogleFonts.tinos(
+              fontSize: 20,
+              fontWeight: FontWeight.w600,
+              fontStyle: FontStyle.italic,
             ),
           ),
         ),

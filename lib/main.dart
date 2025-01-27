@@ -1,4 +1,5 @@
 import 'package:bookly_app/core/utils/app_router.dart';
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -9,7 +10,11 @@ void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
   ));
-  runApp(BooklyApp());
+  runApp(
+    DevicePreview(
+      builder: (context) => BooklyApp(),
+    ),
+  );
 }
 
 class BooklyApp extends StatelessWidget {
@@ -29,4 +34,3 @@ class BooklyApp extends StatelessWidget {
     );
   }
 }
-

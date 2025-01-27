@@ -1,4 +1,3 @@
-import 'package:bookly_app/constants.dart';
 import 'package:bookly_app/core/utils/app_router.dart';
 import 'package:bookly_app/core/utils/assets.dart';
 import 'package:bookly_app/core/utils/styles.dart';
@@ -40,12 +39,12 @@ class TopAnimes extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.5,
-                    child: Text('Chainsaw Man',
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: Styles.texyStyle20
-                            .copyWith(fontFamily: kFontFamilyGT))),
+                  width: MediaQuery.of(context).size.width * 0.5,
+                  child: Text('Chainsaw Man',
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: Styles.texyStyle20),
+                ),
                 const SizedBox(height: 3),
                 Text(
                   'Tatsuki Fujimoto',
