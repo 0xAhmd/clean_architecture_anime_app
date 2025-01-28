@@ -1,5 +1,4 @@
 import 'package:bookly_app/core/utils/app_router.dart';
-import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -11,9 +10,7 @@ void main() {
     statusBarColor: Colors.transparent,
   ));
   runApp(
-    DevicePreview(
-      builder: (context) => BooklyApp(),
-    ),
+    BooklyApp(),
   );
 }
 
