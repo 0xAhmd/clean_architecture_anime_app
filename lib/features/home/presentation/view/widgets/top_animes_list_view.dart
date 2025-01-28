@@ -1,4 +1,4 @@
-import 'package:bookly_app/features/home/presentation/view/widgets/top_animes.dart';
+import 'top_animes.dart';
 import 'package:flutter/material.dart';
 
 class TopAnimesListView extends StatelessWidget {

@@ -1,7 +1,5 @@
-import 'package:bookly_app/features/home/presentation/view/widgets/actions_button.dart';
-import 'package:bookly_app/features/home/presentation/view/widgets/anime_rates.dart';
-
-import 'package:bookly_app/features/home/presentation/view/widgets/custom_details_app_bar.dart';
+import '../custom_details_app_bar.dart';
+import '../details_section.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/utils/styles.dart';
@@ -13,49 +11,45 @@ class DetailsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        CustomDetailsViewAppBar(),
-        const SizedBox(height: 28),
-        Padding(
-          padding: EdgeInsets.symmetric(
-              horizontal: MediaQuery.of(context).size.width * 0.27),
-          child: RecommendedCards(),
-        ),
-        const SizedBox(height: 32),
-        Text(
-          'ChainSaw Man',
-          style: Styles.texyStyle30.copyWith(fontWeight: FontWeight.w600),
-        ),
-        Opacity(
-          opacity: 0.7,
-          child: Text('Tatsuki Fujimoto',
-              style: Styles.texyStyle18.copyWith(
-                fontStyle: FontStyle.italic,
-              )),
-        ),
-        const SizedBox(height: 12),
-        AnimeRates(
-          mainAxisAlignment: MainAxisAlignment.center,
-        ),
-        const SizedBox(height: 32),
-        ActionsButton(),
-        const SizedBox(height: 68),
-        Padding(
-          padding: const EdgeInsets.only(left: 8),
-          child: Align(
-            alignment: Alignment.centerLeft,
-            child: Text(
-              'You can also like',
-              style: Styles.texyStyle16.copyWith(
-                fontWeight: FontWeight.w600,
+    return CustomScrollView(
+      slivers: [
+        SliverFillRemaining(
+          hasScrollBody: false,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              CustomDetailsViewAppBar(),
+              const SizedBox(height: 20),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    horizontal: MediaQuery.of(context).size.width * 0.27),
+                child: RecommendedCards(),
               ),
-            ),
+              DetailsSection(),
+              const SizedBox(height: 20),
+              Padding(
+                padding: const EdgeInsets.only(left: 8),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 6.0),
+                    child: Text(
+                      'You can also like',
+                      style: Styles.texyStyle16.copyWith(
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 6),
+              Padding(
+                padding: const EdgeInsets.only(left: 8.0),
+                child: RecommendedAnimesSection(),
+              ),
+            ],
           ),
-        ),
-        const SizedBox(height: 8),
-        RecommendedAnimesSection(),
+        )
       ],
     );
   }

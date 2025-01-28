@@ -1,7 +1,7 @@
-import 'package:bookly_app/core/utils/app_router.dart';
-import 'package:bookly_app/core/utils/assets.dart';
-import 'package:bookly_app/core/utils/styles.dart';
-import 'package:bookly_app/features/home/presentation/view/widgets/anime_rates.dart';
+import '../../../../../core/utils/app_router.dart';
+import '../../../../../core/utils/assets.dart';
+import '../../../../../core/utils/styles.dart';
+import 'anime_rates.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
