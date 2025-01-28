@@ -26,7 +26,7 @@ class DetailsViewBody extends StatelessWidget {
                 child: RecommendedCards(),
               ),
               DetailsSection(),
-              const SizedBox(height: 20),
+              const SizedBox(height: 16),
               Padding(
                 padding: const EdgeInsets.only(left: 8),
                 child: Align(
