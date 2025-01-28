@@ -1,4 +1,3 @@
-
 import '../../../../../core/utils/styles.dart';
 import 'actions_button.dart';
 import 'anime_rates.dart';
@@ -29,7 +28,7 @@ class DetailsSection extends StatelessWidget {
         ),
         const SizedBox(height: 32),
         ActionsButton(),
-        const SizedBox(height: 50),
+        const SizedBox(height: 38),
       ],
     );
   }
