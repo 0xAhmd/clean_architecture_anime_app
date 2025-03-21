@@ -42,9 +42,9 @@ class _SplashViewBodyState extends State<SplashViewBody>
       children: [
         FadeTransition(
           opacity: _fadeAnimation,
-          child: Image.asset(
-            AssetsData.logo2,
-            height: 300,
+          child: CircleAvatar(
+            radius:  180,
+            backgroundImage: AssetImage(AssetsData.logo2 ,),
           ),
         ),
         const SizedBox(height: 8),
