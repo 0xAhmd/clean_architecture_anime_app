@@ -1,8 +1,9 @@
+import 'package:flutter/material.dart';
+
 import '../../../../../../core/utils/styles.dart';
 import '../custom_app_bar.dart';
 import '../custom_card_list_view.dart';
 import '../top_animes_list_view.dart';
-import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -12,7 +13,7 @@ class HomeViewBody extends StatelessWidget {
     return Padding(
         padding: const EdgeInsets.symmetric(
           vertical: 8,
-          horizontal: 30,
+          horizontal: 16,
         ),
         child: CustomScrollView(
           slivers: [
@@ -26,7 +27,7 @@ class HomeViewBody extends StatelessWidget {
                   Text('Top Animes',
                       style: Styles.texyStyle20
                           .copyWith(fontWeight: FontWeight.w600)),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 8),
                 ],
               ),
             ),

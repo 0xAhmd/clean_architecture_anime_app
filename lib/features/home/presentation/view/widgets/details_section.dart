@@ -1,7 +1,8 @@
+import 'package:flutter/material.dart';
+
 import '../../../../../core/utils/styles.dart';
 import 'actions_button.dart';
 import 'anime_rates.dart';
-import 'package:flutter/material.dart';
 
 class DetailsSection extends StatelessWidget {
   const DetailsSection({super.key});
@@ -12,7 +13,7 @@ class DetailsSection extends StatelessWidget {
       children: [
         const SizedBox(height: 32),
         Text(
-          'ChainSaw Man',
+          'Jujutsu Kaisen',
           style: Styles.texyStyle30.copyWith(fontWeight: FontWeight.w600),
         ),
         Opacity(

@@ -1,0 +1,2 @@
+C:/Users/abo7med/ALSoftagy/FlutterLearn/books_app_clean_architecture/android/app/.cxx/Debug/5l2n53k4/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/abo7med/ALSoftagy/FlutterLearn/books_app_clean_architecture/android/app/.cxx/Debug/5l2n53k4/x86_64/CMakeFiles/rebuild_cache.dir

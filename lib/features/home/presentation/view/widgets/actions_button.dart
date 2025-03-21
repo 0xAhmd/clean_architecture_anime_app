@@ -12,7 +12,7 @@ class ActionsButton extends StatelessWidget {
         children: [
           Expanded(
             child: CustomButton(
-              text: '44 €',
+              text: '999 €',
               backgroundColor: Colors.white,
               textColor: Colors.black,
               borderRadius: BorderRadius.only(

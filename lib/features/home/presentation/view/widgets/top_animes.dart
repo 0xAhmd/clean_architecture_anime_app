@@ -1,9 +1,10 @@
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+
 import '../../../../../core/utils/app_router.dart';
 import '../../../../../core/utils/assets.dart';
 import '../../../../../core/utils/styles.dart';
 import 'anime_rates.dart';
-import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class TopAnimes extends StatelessWidget {
   const TopAnimes({super.key});
@@ -40,7 +41,7 @@ class TopAnimes extends StatelessWidget {
               children: [
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.5,
-                  child: Text('Chainsaw Man',
+                  child: Text('Jujutsu Kaisen',
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                       style: Styles.texyStyle20),

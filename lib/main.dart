@@ -10,12 +10,12 @@ void main() {
     statusBarColor: Colors.transparent,
   ));
   runApp(
-    BooklyApp(),
+    ReadingHub(),
   );
 }
 
-class BooklyApp extends StatelessWidget {
-  const BooklyApp({super.key});
+class ReadingHub extends StatelessWidget {
+  const ReadingHub({super.key});
 
   @override
   Widget build(BuildContext context) {
