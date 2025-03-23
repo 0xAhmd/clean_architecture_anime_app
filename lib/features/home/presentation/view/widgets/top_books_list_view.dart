@@ -1,8 +1,8 @@
-import 'top_animes.dart';
+import 'top_books.dart';
 import 'package:flutter/material.dart';
 
-class TopAnimesListView extends StatelessWidget {
-  const TopAnimesListView({super.key});
+class TopBooksListView extends StatelessWidget {
+  const TopBooksListView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class TopAnimesListView extends StatelessWidget {
         (context, index) {
           return Padding(
             padding: const EdgeInsets.symmetric(vertical: 10.0),
-            child: TopAnimes(),
+            child: TopBooks(),
           );
         },
       ),

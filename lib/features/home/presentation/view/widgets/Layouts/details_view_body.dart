@@ -3,7 +3,7 @@ import '../details_section.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/utils/styles.dart';
-import '../recommended_animes_card.dart';
+import '../recommended_books_card.dart';
 import '../recommended_animes_list_View.dart';
 
 class DetailsViewBody extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'recommended_animes_card.dart';
+import 'package:bookly_app/features/home/presentation/view/widgets/recommended_books_card.dart';
 import 'package:flutter/material.dart';
 
 class RecommendedAnimesSection extends StatelessWidget {

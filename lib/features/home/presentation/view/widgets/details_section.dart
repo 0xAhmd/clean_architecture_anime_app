@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/styles.dart';
 import 'actions_button.dart';
-import 'anime_rates.dart';
+import 'books_rates.dart';
 
 class DetailsSection extends StatelessWidget {
   const DetailsSection({super.key});
@@ -24,7 +24,7 @@ class DetailsSection extends StatelessWidget {
               )),
         ),
         const SizedBox(height: 12),
-        AnimeRates(
+        BookRates(
           mainAxisAlignment: MainAxisAlignment.center,
         ),
         const SizedBox(height: 32),

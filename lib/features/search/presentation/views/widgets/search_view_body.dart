@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../../../../home/presentation/view/widgets/top_animes.dart';
+import '../../../../home/presentation/view/widgets/top_books.dart';
 
 class SearchViewBody extends StatelessWidget {
   const SearchViewBody({super.key});
@@ -58,7 +58,7 @@ class ResultsListView extends StatelessWidget {
     return ListView.builder(itemBuilder: (context, index) {
       return Padding(
         padding: const EdgeInsets.symmetric(vertical: 10.0),
-        child: TopAnimes(),
+        child: TopBooks(),
       );
     });
   }

@@ -4,10 +4,10 @@ import 'package:go_router/go_router.dart';
 import '../../../../../core/utils/app_router.dart';
 import '../../../../../core/utils/assets.dart';
 import '../../../../../core/utils/styles.dart';
-import 'anime_rates.dart';
+import 'books_rates.dart';
 
-class TopAnimes extends StatelessWidget {
-  const TopAnimes({super.key});
+class TopBooks extends StatelessWidget {
+  const TopBooks({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +48,7 @@ class TopAnimes extends StatelessWidget {
                 ),
                 const SizedBox(height: 3),
                 Text(
-                  'Tatsuki Fujimoto',
+                  'Gege Akutami',
                   style: Styles.texyStyle14,
                 ),
                 const SizedBox(height: 3),
@@ -56,7 +56,7 @@ class TopAnimes extends StatelessWidget {
                   children: [
                     Text('44 €', style: Styles.texyStyle20),
                     Spacer(),
-                    AnimeRates()
+                    BookRates()
                   ],
                 )
               ],
