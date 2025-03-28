@@ -12,8 +12,8 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Padding(
-          padding: const EdgeInsets.only(left: 8.0),
+    const     Padding(
+          padding:  EdgeInsets.only(left: 8.0),
           child: CircleAvatar(
             radius: 17,
             backgroundImage: AssetImage(AssetsData.logo2),
@@ -24,7 +24,7 @@ class CustomAppBar extends StatelessWidget {
             onPressed: () {
               GoRouter.of(context).push(AppRouter.kSearchView);
             },
-            icon: Icon(FontAwesomeIcons.magnifyingGlass)),
+            icon: const Icon(FontAwesomeIcons.magnifyingGlass)),
       ],
     );
   }

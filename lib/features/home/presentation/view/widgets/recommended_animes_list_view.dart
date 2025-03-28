@@ -12,8 +12,8 @@ class RecommendedAnimesSection extends StatelessWidget {
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.symmetric(
+          return const Padding(
+            padding: EdgeInsets.symmetric(
               horizontal: 6,
             ),
             child: RecommendedCards(),

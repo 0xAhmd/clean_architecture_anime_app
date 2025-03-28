@@ -16,7 +16,7 @@ class CustomCard extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 color: Colors.white,
-                image: DecorationImage(
+                image: const DecorationImage(
                   image: AssetImage(AssetsData.testImage),
                   fit: BoxFit.fill,
                 ),
@@ -31,7 +31,7 @@ class CustomCard extends StatelessWidget {
                   backgroundColor: const Color.fromARGB(77, 255, 255, 255),
                   child: IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.play_arrow),
+                    icon: const Icon(Icons.play_arrow),
                   ),
                 ),
               ),

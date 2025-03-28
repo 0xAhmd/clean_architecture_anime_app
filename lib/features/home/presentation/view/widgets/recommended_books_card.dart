@@ -14,7 +14,7 @@ class RecommendedCards extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 color: Colors.white,
-                image: DecorationImage(
+                image: const DecorationImage(
                   image: AssetImage(AssetsData.testImage),
                   fit: BoxFit.fill,
                 ),

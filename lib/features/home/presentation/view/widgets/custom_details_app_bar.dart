@@ -17,9 +17,9 @@ class CustomDetailsViewAppBar extends StatelessWidget {
               onPressed: () {
                 GoRouter.of(context).pop();
               },
-              icon: Icon(Icons.close)),
+              icon: const Icon(Icons.close)),
           IconButton(
-              onPressed: () {}, icon: Icon(Icons.shopping_cart_outlined)),
+              onPressed: () {}, icon: const Icon(Icons.shopping_cart_outlined)),
         ],
       ),
     );

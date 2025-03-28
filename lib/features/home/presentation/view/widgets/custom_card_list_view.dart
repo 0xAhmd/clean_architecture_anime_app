@@ -11,8 +11,8 @@ class CustomCardListView extends StatelessWidget {
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 8.0),
+          return const Padding(
+            padding:  EdgeInsets.symmetric(horizontal: 8.0, vertical: 8.0),
             child: CustomCard(),
           );
         },

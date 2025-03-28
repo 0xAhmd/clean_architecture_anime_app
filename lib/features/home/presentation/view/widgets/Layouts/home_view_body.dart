@@ -21,8 +21,8 @@ class HomeViewBody extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  CustomAppBar(),
-                  CustomCardListView(),
+                  const CustomAppBar(),
+                  const CustomCardListView(),
                   const SizedBox(height: 50),
                   Text('Top Animes',
                       style: Styles.texyStyle20
@@ -31,7 +31,7 @@ class HomeViewBody extends StatelessWidget {
                 ],
               ),
             ),
-            TopBooksListView(),
+            const TopBooksListView(),
           ],
         ));
   }

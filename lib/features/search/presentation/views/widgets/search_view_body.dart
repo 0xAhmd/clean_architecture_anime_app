@@ -8,14 +8,14 @@ class SearchViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+    return const Padding(
+      padding:  EdgeInsets.symmetric(horizontal: 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const SizedBox(height: 28),
-          const CustomTextField(),
-          const SizedBox(height: 16),
+           SizedBox(height: 28),
+           CustomTextField(),
+           SizedBox(height: 16),
           Text(
             'Results',
             style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
@@ -38,10 +38,10 @@ class CustomTextField extends StatelessWidget {
           borderRadius: BorderRadius.circular(4),
         ),
         hintText: 'Search',
-        hintStyle: TextStyle(
+        hintStyle: const TextStyle(
           color: Colors.grey,
         ),
-        suffixIcon: Icon(
+        suffixIcon: const Icon(
           FontAwesomeIcons.magnifyingGlass,
           size: 18,
         ),
@@ -56,8 +56,8 @@ class ResultsListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(itemBuilder: (context, index) {
-      return Padding(
-        padding: const EdgeInsets.symmetric(vertical: 10.0),
+      return const Padding(
+        padding: EdgeInsets.symmetric(vertical: 10.0),
         child: TopBooks(),
       );
     });

@@ -18,14 +18,14 @@ class DetailsViewBody extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              CustomDetailsViewAppBar(),
+              const CustomDetailsViewAppBar(),
               const SizedBox(height: 4),
               Padding(
                 padding: EdgeInsets.symmetric(
                     horizontal: MediaQuery.of(context).size.width * 0.27),
-                child: RecommendedCards(),
+                child: const RecommendedCards(),
               ),
-              DetailsSection(),
+              const DetailsSection(),
               const SizedBox(height: 4),
               Padding(
                 padding: const EdgeInsets.only(left: 8),
@@ -43,8 +43,8 @@ class DetailsViewBody extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 12),
-              Padding(
-                padding: const EdgeInsets.only(left: 8.0),
+              const Padding(
+                padding: EdgeInsets.only(left: 8.0),
                 child: RecommendedAnimesSection(),
               ),
             ],

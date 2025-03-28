@@ -6,11 +6,11 @@ import 'constants.dart';
 import 'core/utils/app_router.dart';
 
 void main() {
-  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
   ));
   runApp(
-    ReadingHub(),
+    const ReadingHub(),
   );
 }
 

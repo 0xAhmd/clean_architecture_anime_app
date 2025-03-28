@@ -9,8 +9,8 @@ class TopBooksListView extends StatelessWidget {
     return SliverList(
       delegate: SliverChildBuilderDelegate(
         (context, index) {
-          return Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0),
+          return const Padding(
+            padding:  EdgeInsets.symmetric(vertical: 10.0),
             child: TopBooks(),
           );
         },

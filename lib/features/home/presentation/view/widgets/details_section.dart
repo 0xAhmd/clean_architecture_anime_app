@@ -24,11 +24,11 @@ class DetailsSection extends StatelessWidget {
               )),
         ),
         const SizedBox(height: 12),
-        BookRates(
+        const BookRates(
           mainAxisAlignment: MainAxisAlignment.center,
         ),
         const SizedBox(height: 32),
-        ActionsButton(),
+        const ActionsButton(),
         const SizedBox(height: 38),
       ],
     );

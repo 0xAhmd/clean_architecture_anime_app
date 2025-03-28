@@ -6,9 +6,9 @@ class ActionsButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 32),
-      child: const Row(
+    return const Padding(
+      padding:  EdgeInsets.symmetric(horizontal: 32),
+      child:  Row(
         children: [
           Expanded(
             child: CustomButton(
