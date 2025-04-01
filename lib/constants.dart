@@ -5,3 +5,4 @@ const kTransationDuration = Duration(milliseconds: 250);
 const kFontFamilyGT = 'GT Sectra Fine Regular';
 const String kFeaturedBox = 'featured_books';
 const String kNewestBox = 'newest_books';
+const String boxName = kNewestBox;
