@@ -3,7 +3,6 @@ import 'package:bookly_app/core/utils/api_service.dart';
 import 'package:bookly_app/core/utils/cache_data.dart';
 import 'package:bookly_app/features/home/data/models/book_model/book_model.dart';
 import 'package:bookly_app/features/home/domain/entities/book_entity.dart';
-import 'package:hive/hive.dart';
 
 abstract class HomeRemoteDataSrc {
   Future<List<BookEntity>> fetchNewestBooks();
