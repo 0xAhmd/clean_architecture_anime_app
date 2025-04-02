@@ -26,8 +26,8 @@ void main() async {
 
   Hive.registerAdapter(BookEntityAdapter());
   setupServiceLocator();
-  await Hive.openBox(kFeaturedBox);
-  await Hive.openBox(kNewestBox);
+  await Hive.openBox<BookEntity>(kFeaturedBox);
+  await Hive.openBox<BookEntity>(kNewestBox);
   Bloc.observer = Observer();
   runApp(
     const ReadingHub(),
@@ -44,7 +44,8 @@ class ReadingHub extends StatelessWidget {
         BlocProvider(
           create: (context) {
             return FeaturedBooksCubit(
-                FetchFeaturedBooksUseCase(getIt.get<HomeRepoImpl>()));
+              FetchFeaturedBooksUseCase(getIt.get<HomeRepoImpl>()),
+            )..fetchFeaturedBooks();
           },
         ),
         BlocProvider(
@@ -67,3 +68,4 @@ class ReadingHub extends StatelessWidget {
     );
   }
 }
+

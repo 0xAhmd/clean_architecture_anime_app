@@ -1,8 +1,8 @@
+import 'package:bookly_app/features/home/presentation/view/widgets/custom_card_list_view_bloc_builder.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/utils/styles.dart';
 import '../custom_app_bar.dart';
-import '../custom_card_list_view.dart';
 import '../top_books_list_view.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -22,7 +22,7 @@ class HomeViewBody extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const CustomAppBar(),
-                  const CustomCardListView(),
+                  const CustomCardListViewBlocBuilder(),
                   const SizedBox(height: 50),
                   Text('Top Animes',
                       style: Styles.texyStyle20
