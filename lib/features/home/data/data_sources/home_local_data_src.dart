@@ -1,5 +1,5 @@
-import 'package:bookly_app/constants.dart';
-import 'package:bookly_app/features/home/domain/entities/book_entity.dart';
+import '../../../../constants.dart';
+import '../../domain/entities/book_entity.dart';
 import 'package:hive_flutter/adapters.dart';
 
 abstract class HomeLocalDataSrc {

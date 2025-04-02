@@ -1,10 +1,10 @@
-import '../custom_details_app_bar.dart';
-import '../details_section.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/utils/styles.dart';
-import '../recommended_books_card.dart';
+import '../custom_details_app_bar.dart';
+import '../details_section.dart';
 import '../recommended_animes_list_View.dart';
+import '../recommended_books_card.dart';
 
 class DetailsViewBody extends StatelessWidget {
   const DetailsViewBody({super.key});

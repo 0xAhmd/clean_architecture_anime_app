@@ -1,5 +1,6 @@
-import 'widgets/Layouts/details_view_body.dart';
 import 'package:flutter/material.dart';
+
+import 'widgets/Layouts/details_view_body.dart';
 
 class DetailsView extends StatelessWidget {
   const DetailsView({super.key});

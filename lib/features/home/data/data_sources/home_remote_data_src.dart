@@ -1,8 +1,8 @@
-import 'package:bookly_app/constants.dart';
-import 'package:bookly_app/core/utils/api_service.dart';
-import 'package:bookly_app/core/utils/cache_data.dart';
-import 'package:bookly_app/features/home/data/models/book_model/book_model.dart';
-import 'package:bookly_app/features/home/domain/entities/book_entity.dart';
+import '../../../../constants.dart';
+import '../../../../core/utils/api_service.dart';
+import '../../../../core/utils/cache_data.dart';
+import '../models/book_model/book_model.dart';
+import '../../domain/entities/book_entity.dart';
 
 abstract class HomeRemoteDataSrc {
   Future<List<BookEntity>> fetchNewestBooks();
