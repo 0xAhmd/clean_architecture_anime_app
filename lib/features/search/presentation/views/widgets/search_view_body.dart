@@ -58,7 +58,12 @@ class ResultsListView extends StatelessWidget {
     return ListView.builder(itemBuilder: (context, index) {
       return const Padding(
         padding: EdgeInsets.symmetric(vertical: 10.0),
-        child: TopBooks(),
+        child: TopBooks(
+          image: "",
+          author: "",
+    
+          title: "",
+        ),
       );
     });
   }

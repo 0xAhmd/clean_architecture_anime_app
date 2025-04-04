@@ -1,9 +1,9 @@
+import 'package:bookly_app/features/home/presentation/view/widgets/recommended_books_list_view.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/utils/styles.dart';
 import '../custom_details_app_bar.dart';
 import '../details_section.dart';
-import '../recommended_animes_list_View.dart';
 import '../recommended_books_card.dart';
 
 class DetailsViewBody extends StatelessWidget {
@@ -45,7 +45,9 @@ class DetailsViewBody extends StatelessWidget {
               const SizedBox(height: 12),
               const Padding(
                 padding: EdgeInsets.only(left: 8.0),
-                child: RecommendedAnimesSection(),
+                child: RecommendedBookssSection(
+                  books: [],
+                ),
               ),
             ],
           ),

@@ -12,13 +12,12 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-    const     Padding(
-          padding:  EdgeInsets.only(left: 8.0),
-          child: CircleAvatar(
-            radius: 17,
-            backgroundImage: AssetImage(AssetsData.logo2),
-          ),
-        ),
+        const Padding(
+            padding: EdgeInsets.only(left: 8.0),
+            child: SizedBox(
+              height: 46,
+              child: Image(image: AssetImage(AssetsData.book)),
+            )),
         const Spacer(),
         IconButton(
             onPressed: () {

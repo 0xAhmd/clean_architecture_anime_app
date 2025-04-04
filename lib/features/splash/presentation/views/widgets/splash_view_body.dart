@@ -42,10 +42,12 @@ class _SplashViewBodyState extends State<SplashViewBody>
       children: [
         FadeTransition(
           opacity: _fadeAnimation,
-          child: const CircleAvatar(
-            radius: 180,
-            backgroundImage: AssetImage(
-              AssetsData.logo2,
+          child: const SizedBox(
+            height: 200,
+            child: Image(
+              image:  AssetImage(
+                AssetsData.book,
+              ),
             ),
           ),
         ),
@@ -53,7 +55,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
         FadeTransition(
           opacity: _fadeAnimation,
           child: Text(
-            'Your Getway to the World of Anime',
+            'Your Getway to the World of Reading',
             textAlign: TextAlign.center,
             style: GoogleFonts.tinos(
               fontSize: 20,

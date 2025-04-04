@@ -4,14 +4,21 @@ import 'package:hive_flutter/adapters.dart';
 
 abstract class HomeLocalDataSrc {
   List<BookEntity> fetchNewestBooks();
-  List<BookEntity> fetchFeaturedBooks();
+  List<BookEntity> fetchFeaturedBooks({int pageNumber = 0});
 }
 
 class HomeLocalDataSrcImpl extends HomeLocalDataSrc {
   @override
-  List<BookEntity> fetchFeaturedBooks() {
+  List<BookEntity> fetchFeaturedBooks({int pageNumber = 0}) {
+    int startIndex = pageNumber * 10;
+    int endIndex = (pageNumber + 1) * 10;
     var box = Hive.box<BookEntity>(kFeaturedBox);
-    return box.values.toList();
+    int len = box.values.length;
+    if (startIndex >= len  || endIndex > len) {
+      return [];
+    }
+
+    return box.values.toList().sublist(startIndex, endIndex);
   }
 
   @override

@@ -1,44 +1,25 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utils/assets.dart';
-
 class CustomCard extends StatelessWidget {
-  const CustomCard({super.key});
-
+  const CustomCard({super.key, required this.image});
+  final String image;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       child: AspectRatio(
         aspectRatio: 2.6 / 4,
-        child: Stack(
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-                color: Colors.white,
-                image: const DecorationImage(
-                  image: AssetImage(AssetsData.testImage),
-                  fit: BoxFit.fill,
-                ),
-              ),
-            ),
-            Align(
-              alignment: Alignment.bottomRight,
-              child: Padding(
-                padding: const EdgeInsets.all(6),
-                child: CircleAvatar(
-                  radius: 20,
-                  backgroundColor: const Color.fromARGB(77, 255, 255, 255),
-                  child: IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Icons.play_arrow),
-                  ),
-                ),
-              ),
-            )
-          ],
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(14),
+          child: CachedNetworkImage(
+            imageUrl: image,
+            fit: BoxFit.fill,
+          ),
         ),
       ),
     );
   }
 }
+
+
+//! 16

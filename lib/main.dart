@@ -51,7 +51,7 @@ class ReadingHub extends StatelessWidget {
         BlocProvider(
           create: (context) {
             return FetchNewestBooksCubit(
-                FetchNewestBooksUseCase(getIt.get<HomeRepoImpl>()));
+                FetchNewestBooksUseCase(getIt.get<HomeRepoImpl>()))..fetchNewestBooks();
           },
         )
       ],
@@ -68,4 +68,5 @@ class ReadingHub extends StatelessWidget {
     );
   }
 }
+
 
