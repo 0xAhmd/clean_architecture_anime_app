@@ -59,9 +59,9 @@ class ResultsListView extends StatelessWidget {
       return const Padding(
         padding: EdgeInsets.symmetric(vertical: 10.0),
         child: TopBooks(
+          rate: 0,
           image: "",
-          author: "",
-    
+          author:"",
           title: "",
         ),
       );

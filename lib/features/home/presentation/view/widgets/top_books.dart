@@ -11,11 +11,12 @@ class TopBooks extends StatelessWidget {
     super.key,
     required this.title,
     required this.image,
-    required this.author,
+    required this.author, required this.rate,
   });
   final String title;
   final String image;
   final String author;
+  final num rate;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -58,7 +59,9 @@ class TopBooks extends StatelessWidget {
                   children: [
                     Text("free", style: Styles.texyStyle20),
                     const Spacer(),
-                    const BookRates()
+                    BookRates(
+                      rating: rate,
+                    )
                   ],
                 )
               ],

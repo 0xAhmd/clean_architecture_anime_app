@@ -17,6 +17,7 @@ childCount: books.length,
           return Padding(
             padding: const EdgeInsets.symmetric(vertical: 10.0),
             child: TopBooks(
+              rate: books[index].rate ?? 0,
               image: books[index].image ?? "",
               author: books[index].author ?? "",
               title: books[index].title,
