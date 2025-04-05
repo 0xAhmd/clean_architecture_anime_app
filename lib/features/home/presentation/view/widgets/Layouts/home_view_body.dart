@@ -1,6 +1,6 @@
-import 'package:bookly_app/features/home/presentation/manager/cubit/fetch_newest_books_cubit.dart';
-import 'package:bookly_app/features/home/presentation/view/widgets/custom_card_list_view_bloc_consumer.dart';
-import 'package:bookly_app/features/home/presentation/view/widgets/top_books_list_view_bloc_consumer.dart';
+import '../../../manager/cubit/fetch_newest_books_cubit.dart';
+import '../custom_card_list_view_bloc_consumer.dart';
+import '../top_books_list_view_bloc_consumer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

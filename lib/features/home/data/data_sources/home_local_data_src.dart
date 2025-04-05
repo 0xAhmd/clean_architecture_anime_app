@@ -1,6 +1,7 @@
+import 'package:hive_flutter/adapters.dart';
+
 import '../../../../constants.dart';
 import '../../domain/entities/book_entity.dart';
-import 'package:hive_flutter/adapters.dart';
 
 abstract class HomeLocalDataSrc {
   List<BookEntity> fetchNewestBooks({int pageNumber = 0});

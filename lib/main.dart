@@ -1,10 +1,10 @@
-import 'package:bookly_app/core/utils/observer.dart';
-import 'package:bookly_app/core/utils/setup_service.dart';
-import 'package:bookly_app/features/home/data/repos/home_repo_impl.dart';
-import 'package:bookly_app/features/home/domain/use_cases/fetch_featured_books_use_case.dart';
-import 'package:bookly_app/features/home/domain/use_cases/fetch_newest_books_use_case.dart';
-import 'package:bookly_app/features/home/presentation/manager/cubit/featured_books_cubit.dart';
-import 'package:bookly_app/features/home/presentation/manager/cubit/fetch_newest_books_cubit.dart';
+import 'core/utils/observer.dart';
+import 'core/utils/setup_service.dart';
+import 'features/home/data/repos/home_repo_impl.dart';
+import 'features/home/domain/use_cases/fetch_featured_books_use_case.dart';
+import 'features/home/domain/use_cases/fetch_newest_books_use_case.dart';
+import 'features/home/presentation/manager/cubit/featured_books_cubit.dart';
+import 'features/home/presentation/manager/cubit/fetch_newest_books_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'features/home/domain/entities/book_entity.dart';
 import 'package:flutter/material.dart';

@@ -1,8 +1,8 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:meta/meta.dart';
 
 import '../../../domain/entities/book_entity.dart';
 import '../../../domain/use_cases/fetch_featured_books_use_case.dart';
-import 'package:meta/meta.dart';
 
 part 'featured_books_state.dart';
 

@@ -1,10 +1,10 @@
-import 'package:bookly_app/features/home/presentation/view/widgets/recommended_books_list_view.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/utils/styles.dart';
 import '../custom_details_app_bar.dart';
 import '../details_section.dart';
 import '../recommended_books_card.dart';
+import '../recommended_books_list_view.dart';
 
 class DetailsViewBody extends StatelessWidget {
   const DetailsViewBody({super.key});

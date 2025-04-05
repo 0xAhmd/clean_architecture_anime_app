@@ -1,10 +1,11 @@
-import '../../../../core/errors/failure.dart';
-import '../data_sources/home_local_data_src.dart';
-import '../data_sources/home_remote_data_src.dart';
-import '../../domain/entities/book_entity.dart';
-import '../../domain/repos/home_repo.dart';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
+
+import '../../../../core/errors/failure.dart';
+import '../../domain/entities/book_entity.dart';
+import '../../domain/repos/home_repo.dart';
+import '../data_sources/home_local_data_src.dart';
+import '../data_sources/home_remote_data_src.dart';
 
 class HomeRepoImpl extends HomeRepo {
   final HomeRemoteDataSrc homeRemoteDataSrc;

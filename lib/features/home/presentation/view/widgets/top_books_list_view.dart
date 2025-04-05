@@ -1,5 +1,5 @@
-import 'package:bookly_app/features/home/domain/entities/book_entity.dart';
-import 'package:bookly_app/features/home/presentation/view/widgets/top_books.dart';
+import '../../../domain/entities/book_entity.dart';
+import 'top_books.dart';
 import 'package:flutter/material.dart';
 
 class TopBooksListView extends StatelessWidget {

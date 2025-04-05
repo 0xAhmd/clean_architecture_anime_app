@@ -1,8 +1,8 @@
 import '../../../../constants.dart';
 import '../../../../core/utils/api_service.dart';
 import '../../../../core/utils/cache_data.dart';
-import '../models/book_model/book_model.dart';
 import '../../domain/entities/book_entity.dart';
+import '../models/book_model/book_model.dart';
 
 abstract class HomeRemoteDataSrc {
   Future<List<BookEntity>> fetchNewestBooks({int pageNumber = 0});

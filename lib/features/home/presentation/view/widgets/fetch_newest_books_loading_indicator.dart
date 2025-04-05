@@ -1,5 +1,5 @@
-import 'package:bookly_app/core/widgets/fading_animation.dart';
-import 'package:bookly_app/features/home/presentation/view/widgets/custom_loading_indicator.dart';
+import '../../../../../core/widgets/fading_animation.dart';
+import 'custom_loading_indicator.dart';
 import 'package:flutter/material.dart';
 
 class FetchNewestBooksLoadingIndicator extends StatelessWidget {
