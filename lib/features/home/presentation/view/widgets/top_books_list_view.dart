@@ -1,19 +1,21 @@
 import 'package:bookly_app/features/home/domain/entities/book_entity.dart';
+import 'package:bookly_app/features/home/presentation/view/widgets/top_books.dart';
 import 'package:flutter/material.dart';
-
-import 'top_books.dart';
 
 class TopBooksListView extends StatelessWidget {
   const TopBooksListView({super.key, required this.books});
+
   final List<BookEntity> books;
+
   @override
   Widget build(BuildContext context) {
-    return SliverList(
-      
-      delegate: SliverChildBuilderDelegate(
-childCount: books.length,
-        (context, index) {
-
+    return SliverToBoxAdapter(
+      child: ListView.builder(
+        physics:
+            const NeverScrollableScrollPhysics(), // disable ListView scrolling
+        shrinkWrap: true, // Let it take only the space it needs
+        itemCount: books.length,
+        itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.symmetric(vertical: 10.0),
             child: TopBooks(
