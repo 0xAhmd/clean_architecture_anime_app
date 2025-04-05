@@ -1,8 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-//import 'package:go_router/go_router.dart';
 
-//import '../../../../../core/utils/app_router.dart';
 import '../../../../../core/utils/styles.dart';
 import 'books_rates.dart';
 
